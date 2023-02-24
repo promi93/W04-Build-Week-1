@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/files/epicode_logo.png" alt="Logo-Epicode" id="logo" />
+    </header>
+
+    <div class="results03">
+      <main id="mainResults">
+        <div id="divHeader">
+          <h1 class="h1 titleResult">Results</h1>
+          <p class="summary">The summary of answers:</p>
+        </div>
+
+        <div id="container-result">
+          <div id="leftDiv">
+            <p class="firstP">Correct</p>
+            <p id="success-rate" class="rateBold"></p>
+            <div id="numAnswersCorrect"></div>
+          </div>
+
+          <div id="centralDiv">
+            <div class="graphic">
+              <!-- div del grafico -->
+              <canvas id="pieChart"></canvas>
+              <p id="inside_canvas"></p>
+              <!--testo inside canvas-->
+            </div>
+          </div>
+
+          <div id="rightDiv">
+            <p class="firstP">Wrong</p>
+            <p id="failure-rate" class="rateBold"></p>
+            <div id="numAnswersWrong"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer id="footerResults">
+        <a href="feedback.html" id="feedpage">RATE US</a>
+        <!--Feedback-->
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="./assets/javascript/result.js"></script>
+  </body>
+</html>

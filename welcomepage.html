@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="shortcut icon" href= "./assets/files/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/files/epicode_logo.png" alt="" />
+    </header>
+    <div id="container">
+        <h1>
+            Welcome to <br />
+            <span>your exam</span>
+        </h1>
+        <h2>Instructions</h2>
+        <p>
+            We don't expect most engineers to know the answers to all of these
+            questions, so don't worry if you're unsure of a few of them.
+        </p>
+        <br/>
+        <ul>
+            <li>
+                Each question is <span>timed</span> and can only be
+                <span>answered once</span>.
+            </li>
+            <li>
+                Changing browser tab or opening other windows will
+                <span>invalidate the question</span>.
+            </li>
+            <li>This exam will take approx. <span>0-5 minutes</span>.</li>
+        </ul>
+
+        <footer>
+            <form action="questionpage.html">
+                <div id="checkboxFooter">
+                    <label>
+                        <input class="boxCheck" type="checkbox" required>promise to answer myself without help from anyone
+                        <span id="mark"></span>
+                        <div id="button">
+                            <button class="proceed glow" type=" submit" >PROCEED </button>
+                        </div>
+                    </label>
+                </div>
+            </form>
+        </footer>
+    </div>
+
+
+
+    <script src="assets/javascript/feed.js"></script>
+</body>
+</html>
